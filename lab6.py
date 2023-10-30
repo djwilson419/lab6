@@ -5,8 +5,15 @@ def encoder(message):
         result += new_digit
     return result
 
-# def decoder (message):
-
+#jake decoder
+def decoder (message):
+    result = ''
+        for digit in message:
+            digit = int(digit) - 3
+            if digit < 0:
+                digit += 10
+            result += str(digit)
+        return result
 
 def main():
     while True:
